@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Assistance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #eeef20; /* Light green background */
+            color: #333; /* Dark text for readability */
+        }
+        header {
+            background-color:#38b000 ; /* Custom green color */
+            color: white;
+            padding: 20px 0;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffb600; /* Dark overlay for better text visibility */
+        }
+        .hero h2 {
+            position: relative;
+            z-index: 1; /* Bring text above the overlay */
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            position: relative;
+            z-index: 1; /* Bring text above the overlay */
+            font-size: 1.2rem;
+        }
+        .technology-card {
+            margin: 20px 0;
+        }
+        .card {
+            background-color: #fae0e4; /* Light gray color for cards */
+        }
+        .card:hover {
+            background-color: #f4acb7; /* Light green on hover */
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #4CAF50; /* Green color for titles */
+        }
+        .card-text {
+            color: #555; /* Darker gray for text */
+        }
+        .btn-primary {
+            background-color: #4CAF50; /* Green button */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        footer {
+            background-color:#38b000 ; /* Dark footer */
+            color: white;
+            padding: 20px 0;
+        }
+        footer a {
+            color: white; /* Green links in footer */
+        }
+        footer a:hover {
+            color: white; /* Lighter green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="text-center">Farmer Assistance</h1>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>Latest Agricultural Technologies</h2>
+        <p>Discover the innovations transforming farming.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1306713348/photo/drone-in-soybean-crop.jpg?s=612x612&w=0&k=20&c=D-3Qud3HszLdfg_Q4mB9TQRetM1W3S-aIZwKHQd3DTg=" class="card-img-top" alt="Smart Irrigation">
+                    <div class="card-body">
+                        <h5 class="card-title">Drones in Agriculture</h5>
+                        <p class="card-text">Automated systems that optimize water usage for better crop yields.</p>
+                        <a href="https://www.youtube.com/watch?v=Dn7Q4oIrP3I" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1365693929/photo/shot-of-a-young-woman-using-a-digital-tablet-while-inspecting-crops-on-a-farm.jpg?s=612x612&w=0&k=20&c=k8vmv91sLcR7ipcNQbefXtwlCCUVHVJXwo5H0AaWeC4=" class="card-img-top" alt="Drones in Agriculture">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Irrigation</h5>
+                        <p class="card-text">Utilizing drones for efficient crop monitoring and analysis.</p>
+                        <a href="https://www.youtube.com/watch?v=gjBFtoruO-I" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1447011226/photo/hydroponic-robot-farming.jpg?s=612x612&w=0&k=20&c=JVgQbVYavXC4xO3w8ea9TGcdEqNI68IgsGE97ZDKCI8=" class="card-img-top" alt="Precision Farming">
+                    <div class="card-body">
+                        <h5 class="card-title">Precision Farming</h5>
+                        <p class="card-text">Leveraging data analytics to enhance farming efficiency and productivity.</p>
+                        <a href="https://www.youtube.com/watch?v=WhAfZhFxHTs&t=7s" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1373227608/photo/shot-young-scientist-using-a-digital-tablet-while-working-with-crops-on-a-farm.jpg?s=612x612&w=0&k=20&c=TxFmjFHa2MeiLKrugFXMTzYLWyKaokBkgCGdA0qGBpo=" class="card-img-top" alt="Soil Health Monitoring">
+                    <div class="card-body">
+                        <h5 class="card-title">Soil Health Monitoring</h5>
+                        <p class="card-text">Using sensors to assess soil conditions and optimize nutrient management.</p>
+                        <a href="https://www.youtube.com/watch?v=nh5x_H_lIko" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1451084434/photo/male-farmer-and-agronomist-using-digital-tablet-while-standing-in-corn-field-against-sky.jpg?s=612x612&w=0&k=20&c=VvPFPbmmQEfeM7xPrSBsC-EgS0vtOLbiIZZS8Ai1eRg=" class="card-img-top" alt="Crop Disease Detection">
+                    <div class="card-body">
+                        <h5 class="card-title">Crop Disease Detection</h5>
+                        <p class="card-text">AI-driven tools to identify diseases early and recommend treatments.</p>
+                        <a href="https://www.youtube.com/watch?v=90SY5wAZdbc" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1346294867/photo/smart-farming-concept.jpg?s=612x612&w=0&k=20&c=wwiWQWIaTAojgCV8lOplPh4cA8g2spKbESFD-nV7TVA=" class="card-img-top" alt="Market Price Forecasting">
+                    <div class="card-body">
+                        <h5 class="card-title">Market Price Forecasting</h5>
+                        <p class="card-text">Analytics tools to predict market trends and optimize selling strategies.</p>
+                        <a href="https://www.youtube.com/watch?v=l8Ld_ePrLLc" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/143917299/photo/farmer-counts-yields-on-a-computer.jpg?s=612x612&w=0&k=20&c=sf5AxvdEfCtJLWRA7WwxEK3f_V5Xk1Vp8t8cg3a3BOs=" class="card-img-top" alt="Vertical Farming">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Farming</h5>
+                        <p class="card-text">Innovative farming technique that uses vertically stacked layers to grow crops.</p>
+                        <a href="https://www.youtube.com/watch?v=hCQHwimJFGM" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1469639791/photo/farmer-using-digital-tablet-in-corn-crop-cultivated-field-with-smart-farming-interface-icons.jpg?s=612x612&w=0&k=20&c=CEnLHATfACNoH_N3Ru5KoTOmAc5SbufJozvV_kcuwc4=" class="card-img-top" alt="Biopesticides">
+                    <div class="card-body">
+                        <h5 class="card-title">Biopesticides</h5>
+                        <p class="card-text">Natural pesticides derived from plants and microorganisms to protect crops.</p>
+                        <a href="https://www.youtube.com/watch?v=M16wVP__DlA" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1152223964/photo/african-farm-worker-noting-progress-of-living-lettuce-growth.jpg?s=612x612&w=0&k=20&c=AJ-dYaB3HTfX0kfBuzdrCP-iLabW09qawTo75vD3O1Q=" class="card-img-top" alt="Blockchain in Agriculture">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain in Agriculture</h5>
+                        <p class="card-text">Using blockchain technology to enhance transparency and traceability in the supply chain.</p>
+                        <a href="https://www.youtube.com/watch?v=yq47hEwg3Iw" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 technology-card">
+                <div class="card shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1218567274/photo/maize-seedling-in-the-cultivated-agricultural-field-with-low-poly-graphic-style.jpg?s=612x612&w=0&k=20&c=ZHZLznRc5pHXr9spSbBw9nCcweQmm_Nso8CMSGua-Yk=" class="card-img-top" alt="Aquaponics">
+                    <div class="card-body">
+                        <h5 class="card-title">Aquaponics</h5>
+                        <p class="card-text">A sustainable farming method that combines aquaculture and hydroponics.</p>
+                        <a href="https://www.youtube.com/watch?v=yhcAOE2JOVs" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 Farmer Assistance. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

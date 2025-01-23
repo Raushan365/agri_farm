@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Forgot Password</h1>
+    <p class="subtitle">Enter your details to reset your password</p>
+    <form  action="forget.php" method="post" >
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <input type="text" name="pass" id="phone" placeholder="Enter pasword" required>
+      <input type="text" name="cnfpass" id="phone" placeholder="confirm password" required>
+      <button type="submit" class="btn">Reset Password</button>
+    </form>
+    <p id="successMessage" class="success-message">Reset link sent! Check your phone.</p>
+  </div>
+
+  <script>
+    // Script to display the success message after form submission
+    document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

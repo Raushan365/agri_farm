@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgba(113, 236, 181, 0.404), rgba(173, 237, 95, 0.623)), 
+    url('freepik-export-20240930163517dsQ7.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 150vh; /* Increase the minimum height to extend the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    position: fixed; /* or use 'absolute' based on your need */
+    top: 0; /* Place it at the top */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 500px; /* Adjust as necessary */
+    overflow: hidden; /* Hide overflow */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+#video-header {
+    position: absolute; /* Keep this as absolute */
+    top: 0; /* Align to the top of the header */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the header */
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 36px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 100px; /* Adjust margin as necessary */
+}
+
+.form-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #56ab2f;
+    outline: none;
+}
+
+.btn {
+    background-color: #56ab2f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Optional: Add some padding at the bottom of the body to ensure content isn't cut off */
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Adjust as necessary */
+}

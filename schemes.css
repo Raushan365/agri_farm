@@ -1,0 +1,120 @@
+/* Reset and Basic Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for Layout Control */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E8B57; /* Dark green for a natural theme */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 1rem;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #FFD700; /* Golden Yellow for hover and active state */
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Schemes Section */
+#schemes {
+    padding: 3rem 0;
+    background-color: #FAFAD2; /* Light golden color for background */
+    text-align: center;
+}
+
+#schemes h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    margin-bottom: 1.5rem;
+}
+
+#schemes p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.scheme-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.scheme-item {
+    background-color: white;
+    border: 2px solid #2E8B57;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scheme-item h3 {
+    color: #2E8B57;
+    margin-bottom: 1rem;
+}
+
+.scheme-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.scheme-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
